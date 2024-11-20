@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embrace - Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #f5f5f0;
+            margin-left: 5%;
+            position: relative;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 0px;
+            margin-top: 0%;
+        }
+
+        .page-title {
+            color: #4682B4;
+            font-size: 2.5rem;
+            margin-top: 10%;
+            font-weight: normal;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+      
+
+        .content {
+            max-width: 1000px;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            margin-top: 2%;
+            margin-left: 4%;
+        }
+
+        .welcome-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .mission-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Decorative shapes */
+        .shapes {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            height: 100%;
+            transform: skew(-20deg);
+        }
+
+        .shape-1 {
+            width: 300px;
+            background-color: rgba(70, 130, 180, 0.3);
+            right: -50px;
+        }
+
+        .shape-2 {
+            width: 200px;
+            background-color: rgba(70, 130, 180, 0.2);
+            right: 150px;
+        }
+
+        .shape-3 {
+            width: 150px;
+            background-color: rgba(139, 69, 69, 0.3);
+            right: -150px;
+        }
+
+        .emphasis {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+   <!-- code for colored shapes on right side of background   -->
+    <div class="shapes">    
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Code for the Header and the logo -->
+    <header class="header">
+        <h1 class="page-title">Home Page</h1>
+        <img src="/Logo/IMG-20241113-WA0005-removebg.png" alt="Embrace Logo" class="logo">
+    </header>
+   
+<!-- code for the contents written on the website -->
+    <main class="content">
+        <h2 class="welcome-title">Welcome to Embrace</h2>
+        <p class="mission-text">
+            At <span class="emphasis">Embrace</span>, we believe that everyone deserves the opportunity to live with independence, dignity, and confidence. Created by two passionate students with a shared vision, Embrace is dedicated to providing innovative solutions that empower individuals with disabilities to thrive in everyday life.
+        </p>
+        <p class="mission-text">
+            Our mission is simple: to break down the barriers that limit access, opportunity, and inclusion for people with physical or cognitive challenges. Through personalized support, and a community-driven approach, we aim to create a more accessible world where everyone can embrace their potential.
+        </p>
+    </main>
+</body>
+</html>

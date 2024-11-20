@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embrace - The Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .content {
+            text-align: center;
+            z-index: 2;
+            margin-bottom: 0%;
+            margin-left: 0%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #4682B4;
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.5rem;
+        }
+
+        .shape {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 100vh;
+            background-color: rgba(70, 130, 180, 0.3);
+            transform: skew(-20deg);
+            right: -50px;
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 100vh;
+            background-color: rgba(70, 130, 180, 0.2);
+            transform: skew(-20deg);
+            right: 150px;
+        }
+
+        .shape-3 {
+            width: 150px;
+            height: 100vh;
+            background-color: rgba(136, 42, 42, 0.3);
+            transform: skew(-20deg);
+            right: -150px;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 90px;
+            
+            margin-bottom: 4%;
+            margin-top: 7%;
+
+        }
+
+        .nav-button {
+            background-color: #4682B4;
+            color: white;
+            padding: 10px 50px;
+            
+            margin-left: 0%;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #3771a0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- code for colored shapes on right side of background   -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+
+    <!-- code for the title of the website -->
+    <div class="content">
+        <h1>Embrace</h1>
+        <p class="subtitle">The Website.</p>
+        <nav class="nav-buttons">
+            <a href="/HomePage.html" class="nav-button">Home</a>
+            <a href="/Loginpage.html" class="nav-button">Login Page</a>
+            <a href="/Merchandise.html" class="nav-button">Merchandise</a>
+
+    </div>
+    
+</body>
+
+</nav>
+</html>
