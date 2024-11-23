@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+Copy<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embrace - The Website</title>
+    <title>Embrace - GPS page</title>
     <style>
         * {
             margin: 0;
@@ -14,14 +14,46 @@
         body {
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Added this */
             background-color: #f5f5f0;
             font-family: Arial, sans-serif;
-            position: relative;
             overflow: hidden;
         }
-        /* Decorative shapes */
+        
+        .header {
+            position: fixed; /* Changed to fixed */
+            top: 17px; /* Added padding from top */
+            right: 18px; /* Added padding from right */
+            z-index: 3; /* Ensure it's above the shapes */
+        }
+
+        .logo {
+            width: 210px; /* Adjusted size */
+            height: 210px;
+            border-radius: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #4682B4;
+            margin-bottom: 5%;
+            font-weight: normal;
+        }
+
+        /* Rest of your styles remain the same */
         .shape {
             position: absolute;
             z-index: 1;
@@ -50,6 +82,10 @@
             transform: skew(-20deg);
             right: -150px;
         }
+
+        .image {
+            border-radius: 1%;
+        }
     </style>
 </head>
 <body>
@@ -57,10 +93,15 @@
     <div class="shape shape-1"></div>
     <div class="shape shape-2"></div>
     <div class="shape shape-3"></div>
+    
+    <header class="header">
+        <img src="/Logo/IMG-20241113-WA0005-removebg.png" alt="Embrace Logo" class="logo">
+    </header>
 
     <!-- code for the title of the website -->
     <div class="content">
-      <iframe src=”https://www.google.com/maps/embed?pb=!…” width=”600″ height=”450″ frameborder=”0″ style=”border:0″ allowfullscreen></iframe>
+        <h1>G.P.S</h1>
+        <img src="/images/GPSIMG.jpg" alt="gps image" class="image">
     </div>
 </body>
 </html>
